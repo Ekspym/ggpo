@@ -15,7 +15,7 @@
 #include "ring_buffer.h"
 #include "network/udp_msg.h"
 
-#define MAX_PREDICTION_FRAMES    8
+#define MAX_PREDICTION_FRAMES    3 // tekken-rollback: rollback at most 3 frames, the rest is input delay
 
 class SyncTestBackend;
 

@@ -8,7 +8,7 @@
 #ifndef _BITVECTOR_H
 #define _BITVECTOR_H
 
-#define BITVECTOR_NIBBLE_SIZE 8
+#define BITVECTOR_NIBBLE_SIZE 10 // tekken-rollback: 56 byte inputs (GAMEINPUT_MAX_BYTES * 2 * 8 < 1024)
 
 void BitVector_SetBit(uint8 *vector, int *offset);
 void BitVector_ClearBit(uint8 *vector, int *offset);
